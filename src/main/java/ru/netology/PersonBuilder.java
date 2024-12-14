@@ -34,8 +34,6 @@ public class PersonBuilder {
 
     public Person build() throws IllegalStateException {
         Person person;
-        if (name == null || surname == null)
-            throw new IllegalArgumentException("The first or last name is not specified");
         if (age < 0) {
             person = new Person(name, surname);
         } else person = new Person(name, surname, age);
