@@ -42,6 +42,10 @@ public class Person {
         return address;
     }
 
+   public OptionalInt getAge() {
+        return OptionalInt.of(age);
+    } 
+
     public String setAddress(String address) {
         this.address = address;
         return this.address;
